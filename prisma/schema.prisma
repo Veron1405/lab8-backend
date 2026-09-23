@@ -3,9 +3,9 @@ generator client {
 }
 
 datasource db {
-  // Troque para "sqlite" se quiser rodar localmente antes da Fase 5
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model Usuario {
